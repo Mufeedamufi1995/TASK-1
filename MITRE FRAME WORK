@@ -1,0 +1,77 @@
+The MITRE ATT&CK framework  is a universally accessible, continuously updated knowledge base for modeling, detecting, preventing and fighting cybersecurity threats based on cybercriminals’ known adversarial behaviors .MITRE formalizes the process of categorizing attacks and allows for a common language when different security teams have to communicate with each other.  It provides a structured methodology for understanding and defending against threats by mapping out how attackers operate across various stages of an intrusion.
+
+The information in MITRE ATT&CK can help security teams :
+
+1.Accurately simulate cyberattacks to test cyber defenses;
+2.Create more effective security policies, security controls and incident response plans; and
+3.Choose and configure security technologies to better detect, prevent and mitigate cyberthreats.
+
+
+MITRE ATT&CK organizes tactics and techniques (and sub techniques) into matrices. Each matrix includes tactics and techniques corresponding to attacks on specific domains:
+
+1.Enterprise Matrix
+
+The Enterprise Matrix includes all adversary techniques used in attacks against enterprise infrastructure. This matrix includes submatrices for the Windows, MacOS and Linux platforms, as well as network infrastructure, cloud platforms and container technologies. It also includes a PRE matrix of preparatory techniques used in advance of an attack.
+
+2.Mobile Matrix
+
+The Mobile Matrix includes techniques used in direct attacks on mobile devices, and in network-based mobile attacks that don’t require access to a mobile device. This matrix includes submatrices for the iOS and Android mobile platforms.
+
+3.ICS Matrix (Industrial control system)
+
+The ICX Matrix includes techniques used in attacks on industrial control systems—specifically the machinery, devices, sensors and networks used to control or automate operations for factories, utilities, transportation systems and other critical service providers.
+
+
+
+Each MITRE ATT&CK tactic represents a specific goal—something the attacker wants to accomplish at a given time. ATT&CK tactics correspond closely to stages or phases of a cyberattack.
+For example, ATT&CK tactics covered by the Enterprise Matrix include:
+
+1.Reconnaissance: Gathering information for planning an attack.
+
+2.Resource development: Establishing resources to support attack operations.
+
+3.Initial access: Penetrating the target system or network.
+
+4.Execution: Running malware or malicious code on the compromised system.
+
+5.Persistence: Maintaining access to the compromised system.
+
+6.Privilege escalation: Gaining higher-level access or permissions (e.g., moving from user to administrator access).
+
+7.Defense evasion: Avoiding detection once inside a system.
+
+8.Credential access: Stealing usernames, passwords and other logon credentials.
+
+9.Discovery: Researching the target environment to learn what resources can be accessed or controlled to support a planned attack.
+
+10.Lateral movement: Gaining access to additional resources within the system.
+
+11.Collection: Gathering data related to the attack goal (e.g., data to encrypt and/or exfiltrate as part of a ransomware attack).
+
+12.Command and control: Establishing covert/undetectable communications that enable the attacker to control the system.
+
+13.Exfiltration: Stealing data from the system.
+
+14.Impact: Interrupting, corrupting, disabling or destroying data or business processes.
+
+If MITRE ATT&CK tactics represent what attackers want to accomplish, MITRE ATT&CK techniques represent how they try to accomplish it. For example, drive-by compromise and spear phishing  are types of initial access techniques; using fileless storage is an example of a defense evasion technique.
+
+The knowledge base provides the following information for each technique:
+
+1.A description and overview of the technique.
+
+2.Any known sub techniques associated with the technique. For example, sub techniques for phishing include spear phishing attachment, spear phishing link and spear phishing via service. At this writing, MITRE ATT&CK documents 196 individual techniques and 411 sub techniques.
+
+3.Examples of related procedures. These can include ways that attack groups use the technique, or types of malicious software used to execute the technique.
+
+4.Mitigations—security practices (e.g., user training) or software (e.g. antivirus software, intrusion prevention systems) that can block or address the technique.
+
+5.Detection methods. Typically these are log data or system data sources that security teams or security software can monitor for evidence of the technique.
+
+USE CASES
+
+1.Threat intelligence : Map threat actor behaviors to ATT&CK techniques , Understand which groups use which tactics.
+2.Red teaming and penetration testing :Use ATT & CK to plan realistic attack simulations.
+3.Detection and SOC operation : Map SIEM  alerts to ATT &CK to measure coverage,identify detection gaps.
+4.Security engineering :Prioritize control based on high risk techniques.
+5.Incident response: Use ATT &CK mapping to track attacker movement during investigations.
